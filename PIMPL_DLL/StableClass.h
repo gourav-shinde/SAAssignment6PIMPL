@@ -11,7 +11,7 @@ class PIMPLDLL_API StableClass : BaseStableClass {
 public:
 	StableClass(void);
 
-	void Method1(int i) override; // Newly Added
+	void Method1(int i) override; 
 	void Method2(int i) override; // Newly Added
 
 	SomeContainedClass1 * GetSomeContainedClass1();
