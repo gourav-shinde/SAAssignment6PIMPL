@@ -5,7 +5,7 @@
 
 class SomeContainedClass1;
 class SomeContainedClass2;
-
+class StableClassImpl;
 // This class is exported from the dll
 class PIMPLDLL_API StableClass : BaseStableClass {
 public:
@@ -18,9 +18,7 @@ public:
 	SomeContainedClass2 * GetSomeContainedClass2();
 
 private:
-	SomeContainedClass1* m_SomeContainedClass1;
-	SomeContainedClass2* m_SomeContainedClass2; // Newly Added
-
+	StableClassImpl* ptr;
 };
 
 
